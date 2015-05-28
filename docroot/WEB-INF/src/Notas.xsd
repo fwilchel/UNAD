@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="informacion_notas_estudiante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="estudiante">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:int" name="numEstudiante"/>
+              <xs:element type="xs:string" name="primerNombre"/>
+              <xs:element type="xs:string" name="primerApellido"/>
+              <xs:element type="xs:string" name="segundoApellido"/>
+              <xs:element type="xs:string" name="programaAcademico"/>
+              <xs:element type="xs:string" name="centro"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="periodos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="periodo" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="nomPeriodo"/>
+                    <xs:element name="cursos">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="curso" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:long" name="registroAcademico"/>
+                                <xs:element type="xs:int" name="codCurso"/>
+                                <xs:element type="xs:string" name="nomCurso"/>
+                                <xs:element type="xs:byte" name="creditos"/>
+                                <xs:element type="xs:string" name="tipoCurso"/>
+                                <xs:element type="xs:float" name="nota60"/>
+                                <xs:element type="xs:float" name="nota40"/>
+                                <xs:element type="xs:float" name="nota100"/>
+                                <xs:element type="xs:string" name="fechaGrabacion"/>
+                                <xs:element type="xs:string" name="observacionNotaCurso"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:float" name="promedio_periodo"/>
+                    <xs:element type="xs:byte" name="totalCreditosAprobadosPeriodo"/>
+                    <xs:element type="xs:string" name="beneficiarioConvenioPeriodo"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:float" name="promedioHistorico"/>
+        <xs:element type="xs:byte" name="totalCreditoAprobados"/>
+        <xs:element type="xs:string" name="fechaGeneracionReporte"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

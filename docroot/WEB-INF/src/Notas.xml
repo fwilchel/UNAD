@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informacion_notas_estudiante>
+	<estudiante>
+		<numEstudiante>80220663</numEstudiante>
+		<primerNombre>HENRY</primerNombre>
+		<primerApellido>PAVA</primerApellido>
+		<segundoApellido>VARGAS</segundoApellido>
+		<programaAcademico>ESP.EN GESTION DE PROYECTOS</programaAcademico>
+		<centro>(BOGOTA CRA.30)JOSE ACEVEDO Y GÓMEZ</centro>
+	</estudiante>
+	<periodos>
+		<periodo>
+			<nomPeriodo>2011 II PERIODO</nomPeriodo>
+			<cursos>
+				<curso>
+					<registroAcademico>384621220</registroAcademico>
+					<codCurso>701005</codCurso>
+					<nomCurso>CIUDADANO DIGITAL</nomCurso>
+					<creditos>1</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.8</nota60>
+					<nota40>4.8</nota40>
+					<nota100>4.8</nota100>
+					<fechaGrabacion>2012-01-30 07:53:44</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+			</cursos>
+			<promedio_periodo>4.8</promedio_periodo>
+			<totalCreditosAprobadosPeriodo>1</totalCreditosAprobadosPeriodo>
+			<beneficiarioConvenioPeriodo>Acuerdo 004 Descuento Egresados
+			</beneficiarioConvenioPeriodo>
+		</periodo>
+		<periodo>
+			<nomPeriodo>2009 II PERIODO</nomPeriodo>
+			<cursos>
+				<curso>
+					<registroAcademico>257899931666</registroAcademico>
+					<codCurso>205008</codCurso>
+					<nomCurso>SISTEMA INTEGRACION UNIVERSITARIA POSGRADOS (SIUP)
+					</nomCurso>
+					<creditos>1</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.7</nota60>
+					<nota40>4.7</nota40>
+					<nota100>4.7</nota100>
+					<fechaGrabacion>2009-12-24 17:25:06</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>257899931667</registroAcademico>
+					<codCurso>206004</codCurso>
+					<nomCurso>INVESTIGACION DE MERCADOS(2)</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.2</nota60>
+					<nota40>4.2</nota40>
+					<nota100>4.2</nota100>
+					<fechaGrabacion>2009-12-21 19:51:10</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>257899931668</registroAcademico>
+					<codCurso>210103</codCurso>
+					<nomCurso>CONTABILIDAD FINANCIERA</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>3.6</nota60>
+					<nota40>3.6</nota40>
+					<nota100>3.6</nota100>
+					<fechaGrabacion>2009-12-21 10:45:49</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>257899931669</registroAcademico>
+					<codCurso>210104</codCurso>
+					<nomCurso>INICIATIVA Y DESARROLLO EMPRESARIAL</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.4</nota60>
+					<nota40>4.4</nota40>
+					<nota100>4.4</nota100>
+					<fechaGrabacion>2009-12-18 11:30:23</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+			</cursos>
+			<promedio_periodo>4.2</promedio_periodo>
+			<totalCreditosAprobadosPeriodo>7</totalCreditosAprobadosPeriodo>
+			<beneficiarioConvenioPeriodo>Acuerdo 004 Descuento Egresados
+			</beneficiarioConvenioPeriodo>
+		</periodo>
+		<periodo>
+			<nomPeriodo>2010 II PERIODO</nomPeriodo>
+			<cursos>
+				<curso>
+					<registroAcademico>257900593775</registroAcademico>
+					<codCurso>210113</codCurso>
+					<nomCurso>EVALUACION ECONOMICA DEL IMPACTO AMBIENTAL</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>2.3</nota60>
+					<nota40>2.3</nota40>
+					<nota100>2.3</nota100>
+					<fechaGrabacion>2010-12-15 13:43:32</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>257900593776</registroAcademico>
+					<codCurso>210109</codCurso>
+					<nomCurso>COSTOS Y PRESUPUESTOS PARA PROYECTOS</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>3.5</nota60>
+					<nota40>3.6</nota40>
+					<nota100>3.5</nota100>
+					<fechaGrabacion>2010-12-17 09:14:03</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>257900593777</registroAcademico>
+					<codCurso>210105</codCurso>
+					<nomCurso>FUNDAMENTOS LEGALES</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.1</nota60>
+					<nota40>4.1</nota40>
+					<nota100>4.1</nota100>
+					<fechaGrabacion>2010-12-15 13:43:32</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>257900593778</registroAcademico>
+					<codCurso>210107</codCurso>
+					<nomCurso>CONSTRUCCION DE INDICADORES Y METODOS DE ANALISIS PARA LA
+						EVALUACION DE PROYECTOS</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>2.0</nota60>
+					<nota40>2.0</nota40>
+					<nota100>2</nota100>
+					<fechaGrabacion>2010-12-15 13:43:32</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+			</cursos>
+			<promedio_periodo>3</promedio_periodo>
+			<totalCreditosAprobadosPeriodo>8</totalCreditosAprobadosPeriodo>
+			<beneficiarioConvenioPeriodo>Acuerdo 004 Descuento Egresados
+			</beneficiarioConvenioPeriodo>
+		</periodo>
+		<periodo>
+			<nomPeriodo>2011 I PERIODO</nomPeriodo>
+			<cursos>
+				<curso>
+					<registroAcademico>259900075055</registroAcademico>
+					<codCurso>210102</codCurso>
+					<nomCurso>SISTEMAS DE INFORMACION PARA LA GESTION DE PROYECTOS
+					</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.9</nota60>
+					<nota40>4.8</nota40>
+					<nota100>4.9</nota100>
+					<fechaGrabacion>2011-06-22 16:44:55</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>259900075056</registroAcademico>
+					<codCurso>210107</codCurso>
+					<nomCurso>CONSTRUCCION DE INDICADORES Y METODOS DE ANALISIS PARA LA
+						EVALUACION DE PROYECTOS</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.0</nota60>
+					<nota40>4.0</nota40>
+					<nota100>4</nota100>
+					<fechaGrabacion>2011-06-22 16:44:55</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>259900075057</registroAcademico>
+					<codCurso>210108</codCurso>
+					<nomCurso>MATEMATICAS FINANCIERAS PARA PROYECTOS</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.0</nota60>
+					<nota40>4.0</nota40>
+					<nota100>4</nota100>
+					<fechaGrabacion>2011-06-22 16:44:55</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>259900075058</registroAcademico>
+					<codCurso>210114</codCurso>
+					<nomCurso>GERENCIA Y AUDITORIA</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.7</nota60>
+					<nota40>4.5</nota40>
+					<nota100>4.6</nota100>
+					<fechaGrabacion>2011-06-22 16:44:55</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+			</cursos>
+			<promedio_periodo>4.4</promedio_periodo>
+			<totalCreditosAprobadosPeriodo>8</totalCreditosAprobadosPeriodo>
+			<beneficiarioConvenioPeriodo>Acuerdo 004 Descuento Egresados
+			</beneficiarioConvenioPeriodo>
+		</periodo>
+		<periodo>
+			<nomPeriodo>2011 II PERIODO</nomPeriodo>
+			<cursos>
+				<curso>
+					<registroAcademico>259900383615</registroAcademico>
+					<codCurso>210101</codCurso>
+					<nomCurso>PROYECTO DE GRADO (ESP. GESTION PROYECTOS)</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.8</nota60>
+					<nota40>4.8</nota40>
+					<nota100>4.8</nota100>
+					<fechaGrabacion>2011-12-20 09:12:39</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>259900383616</registroAcademico>
+					<codCurso>210106</codCurso>
+					<nomCurso>ADMINISTRACION Y GESTION DE PROYECTOS</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.8</nota60>
+					<nota40>4.8</nota40>
+					<nota100>4.8</nota100>
+					<fechaGrabacion>2011-12-20 09:12:39</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+				<curso>
+					<registroAcademico>259900383617</registroAcademico>
+					<codCurso>210110</codCurso>
+					<nomCurso>ANALISIS ECONOMICO</nomCurso>
+					<creditos>2</creditos>
+					<tipoCurso>T</tipoCurso>
+					<nota60>4.8</nota60>
+					<nota40>4.8</nota40>
+					<nota100>4.8</nota100>
+					<fechaGrabacion>2011-12-20 09:12:39</fechaGrabacion>
+					<observacionNotaCurso>Aprobado</observacionNotaCurso>
+				</curso>
+			</cursos>
+			<promedio_periodo>4.8</promedio_periodo>
+			<totalCreditosAprobadosPeriodo>6</totalCreditosAprobadosPeriodo>
+			<beneficiarioConvenioPeriodo>Acuerdo 004 Descuento Egresados
+			</beneficiarioConvenioPeriodo>
+		</periodo>
+	</periodos>
+	<promedioHistorico>4.1</promedioHistorico>
+	<totalCreditoAprobados>26</totalCreditoAprobados>
+	<fechaGeneracionReporte>20/05/15 23:13:53</fechaGeneracionReporte>
+</informacion_notas_estudiante>

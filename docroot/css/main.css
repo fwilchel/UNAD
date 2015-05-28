@@ -1,0 +1,51 @@
+.centradoNegrita{
+	text-align: center;
+	font-weight: bold;
+	background-color: #E3EAFA;
+}
+
+.derechaNegrita{
+	text-align: right;
+	font-weight: bold;
+	background-color: #E3EAFA;
+}
+
+derecha{
+	text-align: right;
+}
+
+.izquierdaTitulo{
+	text-align: left;
+	background-color: #E3EAFA;
+}
+
+.izquierda{
+	text-align: left;
+}
+
+.centrado{
+	text-align: center;
+}
+
+.periodo{
+	text-align: center;
+	font-weight: bold;
+	background-color: #CEFEFF;
+}
+
+.titulos{
+	text-align: center;
+	font-weight: bold;
+	background-color: #E2EAFD;
+}
+
+table, th, td {
+    border: 1px solid white;
+ } 
+ 
+.advertencia{
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	background-color: #E2EAFD;
+}
