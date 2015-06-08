@@ -1,6 +1,7 @@
 package com.ssl.unad;
 
 import com.liferay.portal.kernel.servlet.SessionErrors;
+import com.liferay.portal.kernel.servlet.SessionMessages;
 import com.liferay.util.bridges.mvc.MVCPortlet;
 import com.ssl.unad.dto.InformacionNotasEstudiante;
 
@@ -9,6 +10,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
 
 
 
@@ -56,11 +58,23 @@ public class UnadPortlet extends MVCPortlet {
 			port = locator.getws_unad_minticPort();
 			String xmlEncoded=port.getXML(new String(encode(usuario.getBytes())), new String(encode(password.getBytes())));
 			String xml= new String(decode(xmlEncoded.getBytes()));
+			// <error>Credenciales de acceso Usuario y/o contrasena erradas</error>
+			// <error>La consulta no ha retornado resultados.</error>
+
+			
 			if (xml.startsWith("<error>")){
-				xml=xml.substring(7);
-				if (xml.endsWith("</error>"))
-					xml=xml.substring(0, xml.length()-8);
-				SessionErrors.add(request, "3");
+				if (xml.startsWith("<error>Credenciales de acceso")){
+					SessionErrors.add(request, "2");
+				}else if (xml.startsWith("<error>La consulta no ha retornado")){
+					SessionErrors.add(request, "3");
+					//SessionMessages.add(request, "3");
+				}else{
+					xml=xml.substring(7);
+					if (xml.endsWith("</error>"))
+						xml=xml.substring(0, xml.length()-8);
+					SessionErrors.add(request, "4");
+				}
+				
 			}else{
 				JAXBContext jaxbContext = JAXBContext.newInstance(InformacionNotasEstudiante.class);
 			 
@@ -71,14 +85,9 @@ public class UnadPortlet extends MVCPortlet {
 			}
 			
 		} catch (ServiceException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
 			SessionErrors.add(request, "1");
-			//renderRequest.setAttribute("error", "Hay problemas con el servicio ofrecido por la institución, por favor comuníquese con la institución.");
 		} catch(Exception e){
-			//e.printStackTrace();
-			SessionErrors.add(request, "2");
-			//renderRequest.setAttribute("error", "Hay problemas con el servicio ofrecido por la institución, por favor comuníquese con la institución.");
+			SessionErrors.add(request, "1");
 		}
 		
 	}

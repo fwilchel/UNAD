@@ -28,9 +28,9 @@
 
 
 <liferay-ui:error key="1" message="Hay problemas con el servicio ofrecido por la institución, por favor comuníquese con la institución." />
-<liferay-ui:error key="2" message="Usuario o Contraseña inválidos." />
-<liferay-ui:error key="3" message="Credenciales de acceso Usuario y/o contraseña erradas." />
-
+<liferay-ui:error key="2" message="Credenciales de acceso Usuario y/o contraseña erradas." />
+<liferay-ui:error key="3" message="La consulta no ha retornado resultados." />
+<liferay-ui:error key="4" message="Error inesperado, por favor comuníquelo al administrador." />
 
 <p></p>
 
@@ -114,7 +114,7 @@
 		<td><%=c.getNota60()%></td>
 		<td><%=c.getNota40()%></td>
 		<td><%=c.getNota100()%></td>
-		<td><%=c.getFechaGrabacion().substring(0, 10)%></td>
+		<td><%= (c.getFechaGrabacion()!=null && c.getFechaGrabacion().length()>=10?c.getFechaGrabacion().substring(0, 10):"") %></td>
 		<td><%=c.getObservacionNotaCurso()%></td>
 	</tr>
 
@@ -125,18 +125,22 @@
 		<td colspan="7">Promedio <%=p.getNomPeriodo()%>
 		</td>
 		<td><%=p.getPromedioPeriodo()%></td>
+		<td colspan="2"></td>
 	</tr>
 	<tr class="periodo">
 		<td colspan="7">Total Créditos Aprobados en Período: <%=p.getNomPeriodo()%>
 		</td>
 		<td><%=p.getTotalCreditosAprobadosPeriodo()%></td>
+		<td colspan="2"></td>
 	</tr>
 	<tr class="periodo">
 		<td colspan="8">Beneficiario de Convenio: <%=p.getBeneficiarioConvenioPeriodo()%>
 		</td>
+		<td colspan="2"></td>
 	</tr>
 	<tr class="titulos">
 		<td colspan="8">&nbsp;</td>
+		<td colspan="2"></td>
 	</tr>
 	<%
 		}
@@ -144,13 +148,15 @@
 	<tr class="titulos">
 		<td colspan="7">Promedio Histórico</td>
 		<td><%=o.getPromedioHistorico()%></td>
+		<td colspan="2"></td>
 	</tr>
 	<tr class="titulos">
 		<td colspan="7">Total de Créditos Aprobados</td>
 		<td><%=o.getTotalCreditoAprobados()%></td>
+		<td colspan="2"></td>
 	</tr>
 	<tr class="advertencia">
-		<td colspan="8">Este Reporte es solo informativo y NO es válido
+		<td colspan="10">Este Reporte es solo informativo y NO es válido
 			como certificado oficial de calificaciones</td>
 	</tr>
 </table>
