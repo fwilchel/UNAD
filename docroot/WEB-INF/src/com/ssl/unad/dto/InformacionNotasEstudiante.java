@@ -809,6 +809,8 @@ public class InformacionNotasEstudiante {
                     "tipoCurso",
                     "nota60",
                     "nota40",
+                    "nota75",
+                    "nota25",
                     "nota100",
                     "fechaGrabacion",
                     "observacionNotaCurso"
