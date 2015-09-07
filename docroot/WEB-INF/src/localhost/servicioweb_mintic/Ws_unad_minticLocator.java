@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package localhost.WebServices.servicioweb_mintic;
+package localhost.servicioweb_mintic;
 
-public class Ws_unad_minticLocator extends org.apache.axis.client.Service implements localhost.WebServices.servicioweb_mintic.Ws_unad_mintic {
+public class Ws_unad_minticLocator extends org.apache.axis.client.Service implements localhost.servicioweb_mintic.Ws_unad_mintic {
 
     public Ws_unad_minticLocator() {
     }
@@ -22,9 +22,7 @@ public class Ws_unad_minticLocator extends org.apache.axis.client.Service implem
     }
 
     // Use to get a proxy class for ws_unad_minticPort
-    private java.lang.String ws_unad_minticPort_address = "http://www.unadvirtual.org/Webservices/servicioweb_mintic";
-    // http://www.unadvirtual.org/Webservices/servicioweb_mintic/server_afiliado.php
-    //http://190.66.14.210/Webservices/servicioweb_mintic/server_afiliado.php
+    private java.lang.String ws_unad_minticPort_address = "http://www.unadvirtual.org/Webservices/servicioweb_mintic/server_afiliado.php";
 
     public java.lang.String getws_unad_minticPortAddress() {
         return ws_unad_minticPort_address;
@@ -41,7 +39,7 @@ public class Ws_unad_minticLocator extends org.apache.axis.client.Service implem
         ws_unad_minticPortWSDDServiceName = name;
     }
 
-    public localhost.WebServices.servicioweb_mintic.Ws_unad_minticPortType getws_unad_minticPort() throws javax.xml.rpc.ServiceException {
+    public localhost.servicioweb_mintic.Ws_unad_minticPortType getws_unad_minticPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(ws_unad_minticPort_address);
@@ -52,10 +50,12 @@ public class Ws_unad_minticLocator extends org.apache.axis.client.Service implem
         return getws_unad_minticPort(endpoint);
     }
 
-    public localhost.WebServices.servicioweb_mintic.Ws_unad_minticPortType getws_unad_minticPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public localhost.servicioweb_mintic.Ws_unad_minticPortType getws_unad_minticPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            localhost.WebServices.servicioweb_mintic.Ws_unad_minticBindingStub _stub = new localhost.WebServices.servicioweb_mintic.Ws_unad_minticBindingStub(portAddress, this);
+            localhost.servicioweb_mintic.Ws_unad_minticBindingStub _stub = new localhost.servicioweb_mintic.Ws_unad_minticBindingStub(portAddress, this);
             _stub.setPortName(getws_unad_minticPortWSDDServiceName());
+            _stub.setUsername("c2VydndlYi5taW50aWM=");
+            _stub.setPassword("UzNydjFDMTB3M2IuTTFuVDFj");
             return _stub;
         }
         catch (org.apache.axis.AxisFault e) {
@@ -74,8 +74,8 @@ public class Ws_unad_minticLocator extends org.apache.axis.client.Service implem
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (localhost.WebServices.servicioweb_mintic.Ws_unad_minticPortType.class.isAssignableFrom(serviceEndpointInterface)) {
-                localhost.WebServices.servicioweb_mintic.Ws_unad_minticBindingStub _stub = new localhost.WebServices.servicioweb_mintic.Ws_unad_minticBindingStub(new java.net.URL(ws_unad_minticPort_address), this);
+            if (localhost.servicioweb_mintic.Ws_unad_minticPortType.class.isAssignableFrom(serviceEndpointInterface)) {
+                localhost.servicioweb_mintic.Ws_unad_minticBindingStub _stub = new localhost.servicioweb_mintic.Ws_unad_minticBindingStub(new java.net.URL(ws_unad_minticPort_address), this);
                 _stub.setPortName(getws_unad_minticPortWSDDServiceName());
                 return _stub;
             }
@@ -107,7 +107,7 @@ public class Ws_unad_minticLocator extends org.apache.axis.client.Service implem
     }
 
     public javax.xml.namespace.QName getServiceName() {
-        return new javax.xml.namespace.QName("http://localhost/WebServices/servicioweb_mintic", "ws_unad_mintic");
+        return new javax.xml.namespace.QName("http://localhost/servicioweb_mintic", "ws_unad_mintic");
     }
 
     private java.util.HashSet ports = null;
@@ -115,7 +115,7 @@ public class Ws_unad_minticLocator extends org.apache.axis.client.Service implem
     public java.util.Iterator getPorts() {
         if (ports == null) {
             ports = new java.util.HashSet();
-            ports.add(new javax.xml.namespace.QName("http://localhost/WebServices/servicioweb_mintic", "ws_unad_minticPort"));
+            ports.add(new javax.xml.namespace.QName("http://localhost/servicioweb_mintic", "ws_unad_minticPort"));
         }
         return ports.iterator();
     }

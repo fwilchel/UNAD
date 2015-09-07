@@ -1,7 +1,7 @@
 package com.ssl.unad;
 
 import com.liferay.portal.kernel.servlet.SessionErrors;
-import com.liferay.portal.kernel.servlet.SessionMessages;
+//import com.liferay.portal.kernel.servlet.SessionMessages;
 import com.liferay.util.bridges.mvc.MVCPortlet;
 import com.ssl.unad.dto.InformacionNotasEstudiante;
 
@@ -10,6 +10,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
+
 
 
 
@@ -27,8 +29,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.rpc.ServiceException;
 
-import localhost.WebServices.servicioweb_mintic.Ws_unad_minticLocator;
-import localhost.WebServices.servicioweb_mintic.Ws_unad_minticPortType;
+import localhost.servicioweb_mintic.Ws_unad_minticLocator;
+import localhost.servicioweb_mintic.Ws_unad_minticPortType;
+
 
 /**
  * Portlet implementation class UnadPortlet
@@ -62,14 +65,14 @@ public class UnadPortlet extends MVCPortlet {
 			// <error>La consulta no ha retornado resultados.</error>
 
 			
-			if (xml.startsWith("<error>")){
-				if (xml.startsWith("<error>Credenciales de acceso")){
+			if (xml.indexOf("<error>")!=-1){
+				if (xml.indexOf("<error>Credenciales de acceso")!=-1){
 					SessionErrors.add(request, "2");
-				}else if (xml.startsWith("<error>La consulta no ha retornado")){
+				}else if (xml.indexOf("<error>La consulta no ha retornado")!=-1){
 					SessionErrors.add(request, "3");
 					//SessionMessages.add(request, "3");
 				}else{
-					xml=xml.substring(7);
+					xml=xml.substring(xml.indexOf("<error>")+7);
 					if (xml.endsWith("</error>"))
 						xml=xml.substring(0, xml.length()-8);
 					SessionErrors.add(request, "4");
@@ -88,7 +91,7 @@ public class UnadPortlet extends MVCPortlet {
 			SessionErrors.add(request, "1");
 		} catch(Exception e){
 			SessionErrors.add(request, "1");
-		}
+		} 
 		
 	}
 	

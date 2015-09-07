@@ -80,10 +80,12 @@ public class Ws_unad_minticBindingStub extends org.apache.axis.client.Stub
 				_call.setMaintainSession(super.maintainSession);
 			}
 			if (super.cachedUsername != null) {
-				_call.setUsername(super.cachedUsername);
+				//super.cachedUsername
+				_call.setUsername("c2VydndlYi5taW50aWM=");
 			}
 			if (super.cachedPassword != null) {
-				_call.setPassword(super.cachedPassword);
+				//super.cachedPassword
+				_call.setPassword("UzNydjFDMTB3M2IuTTFuVDFj");
 			}
 			if (super.cachedEndpoint != null) {
 				_call.setTargetEndpointAddress(super.cachedEndpoint);
