@@ -136,8 +136,8 @@ Usar el usuario y contraseña del Campus Virtual<p></p>
 		<td class="izquierda"><%=c.getNomCurso()%></td>
 		<td><%=c.getCreditos()%></td>
 		<td><%=c.getTipoCurso()%></td>
-		<td><%=c.getNota60()%></td>
-		<td><%=c.getNota40()%></td>
+		<td><%=c.getNota60() != 0 ? c.getNota60():c.getNota75()%></td>
+		<td><%=c.getNota40() != 0 ? c.getNota40():c.getNota25()%></td>
 		<td><%=c.getNota100()%></td>
 		<td><%= (c.getFechaGrabacion()!=null && c.getFechaGrabacion().length()>=10?c.getFechaGrabacion().substring(0, 10):"") %></td>
 		<td><%=c.getObservacionNotaCurso()%></td>

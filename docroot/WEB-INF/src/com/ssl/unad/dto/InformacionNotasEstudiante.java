@@ -824,6 +824,8 @@ public class InformacionNotasEstudiante {
                     protected String tipoCurso;
                     protected float nota60;
                     protected float nota40;
+                    protected float nota25;
+                    protected float nota75;
                     protected float nota100;
                     @XmlElement(required = true)
                     protected String fechaGrabacion;
@@ -933,7 +935,13 @@ public class InformacionNotasEstudiante {
                     public float getNota60() {
                         return nota60;
                     }
-
+                    public float getNota25() {
+                        return nota25;
+                    }
+                    public float getNota75() {
+                        return nota75;
+                    }
+                    
                     /**
                      * Sets the value of the nota60 property.
                      * 
@@ -941,7 +949,12 @@ public class InformacionNotasEstudiante {
                     public void setNota60(float value) {
                         this.nota60 = value;
                     }
-
+                    public void setNota75(float value) {
+                        this.nota75 = value;
+                    }
+                    public void setNota25(float value) {
+                        this.nota25 = value;
+                    }
                     /**
                      * Gets the value of the nota40 property.
                      * 
