@@ -119,8 +119,8 @@ Usar el usuario y contraseña del Campus Virtual<p></p>
 		<td>Curso Académico</td>
 		<td>Créditos</td>
 		<td>T.Curso</td>
-		<td>Nota <%= (Integer.parseInt(p.getNomPeriodo().substring(0,4))<2014 ? "60" : "75") %>%</td>
-		<td>Nota <%= (Integer.parseInt(p.getNomPeriodo().substring(0,4))<2014 ? "40" : "25") %>%</td>
+		<td>Nota <%= (p.getCodPeriodo()<179 ? "60" : "75") %>%</td>
+		<td>Nota <%= (p.getCodPeriodo()<179 ? "40" : "25") %>%</td>
 		<td>Calif.Final 100%</td>
 		<td>Fecha Grabación</td>
 		<td>Observación</td>
@@ -136,8 +136,8 @@ Usar el usuario y contraseña del Campus Virtual<p></p>
 		<td class="izquierda"><%=c.getNomCurso()%></td>
 		<td><%=c.getCreditos()%></td>
 		<td><%=c.getTipoCurso()%></td>
-		<td><%=c.getNota60() != 0 ? c.getNota60():c.getNota75()%></td>
-		<td><%=c.getNota40() != 0 ? c.getNota40():c.getNota25()%></td>
+		<td><%=p.getCodPeriodo()<179 ? c.getNota60():c.getNota75()%></td>
+		<td><%=p.getCodPeriodo()<179 ? c.getNota40():c.getNota25()%></td>
 		<td><%=c.getNota100()%></td>
 		<td><%= (c.getFechaGrabacion()!=null && c.getFechaGrabacion().length()>=10?c.getFechaGrabacion().substring(0, 10):"") %></td>
 		<td><%=c.getObservacionNotaCurso()%></td>

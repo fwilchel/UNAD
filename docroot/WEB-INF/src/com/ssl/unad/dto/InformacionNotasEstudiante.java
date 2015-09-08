@@ -573,6 +573,7 @@ public class InformacionNotasEstudiante {
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
+        	"codPeriodo",
             "nomPeriodo",
             "cursos",
             "promedioPeriodo",
@@ -581,6 +582,8 @@ public class InformacionNotasEstudiante {
         })
         public static class Periodo {
 
+        	@XmlElement(required = true)
+            protected Integer codPeriodo;
             @XmlElement(required = true)
             protected String nomPeriodo;
             @XmlElement(required = true)
@@ -599,11 +602,22 @@ public class InformacionNotasEstudiante {
              *     {@link String }
              *     
              */
+            
+            
+            
             public String getNomPeriodo() {
                 return nomPeriodo;
             }
 
-            /**
+            public Integer getCodPeriodo() {
+				return codPeriodo;
+			}
+
+			public void setCodPeriodo(Integer codPeriodo) {
+				this.codPeriodo = codPeriodo;
+			}
+
+			/**
              * Sets the value of the nomPeriodo property.
              * 
              * @param value
