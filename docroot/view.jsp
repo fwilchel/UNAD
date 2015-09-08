@@ -119,8 +119,8 @@ Usar el usuario y contraseña del Campus Virtual<p></p>
 		<td>Curso Académico</td>
 		<td>Créditos</td>
 		<td>T.Curso</td>
-		<td>Nota 60%</td>
-		<td>Nota 40%</td>
+		<td>Nota <%= (Integer.parseInt(p.getNomPeriodo().substring(0,4))<2014 ? "60" : "75") %>%</td>
+		<td>Nota <%= (Integer.parseInt(p.getNomPeriodo().substring(0,4))<2014 ? "40" : "25") %>%</td>
 		<td>Calif.Final 100%</td>
 		<td>Fecha Grabación</td>
 		<td>Observación</td>

@@ -79,7 +79,7 @@ public class UnadPortlet extends MVCPortlet {
 				}
 				
 			}else{
-				System.out.println(xml);
+				//System.out.println(xml);
 				JAXBContext jaxbContext = JAXBContext.newInstance(InformacionNotasEstudiante.class);
 			 
 				Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
