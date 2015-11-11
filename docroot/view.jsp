@@ -33,30 +33,6 @@
 <liferay-ui:error key="4" message="Error inesperado, por favor comuníquelo al administrador." />
 
 <p></p>
-<div align="center">
-<table width="80%" border="1" bordercolor="black">
-	<tr style="background-color: rgb(0,158,224); color:white; text-align:center; font-weight: bold" >
-		<td>
-			Estimado Estudiante Unadista
-		</td>
-	</tr>
-	<tr>
-		<td>
-
-
-</br>
-Te invitamos a consultar tu registro académico por medio del sitio <a href="http://www.sivirtual.gov.co">www.sivirtual.gov.co</a>, para acceder a este servicio debes ingresar los datos de acceso al Campus Virtual (Usuario y Contraseña).</br>
-</br>
-Este nuevo servicio nace como una Alianza Estratégica entre la Universidad Nacional Abierta y a Distancia (UNAD) y el Ministerio de las Tecnologías de la Información y Comunicaciones (MinTic) para brindarte distintas alternativas de acceso a la información, antes de ingresar, debes tener en cuenta que al ingresar estos datos, estás autorizando a la UNAD y al MINTIC a visualizar tu registro académico. (disposiciones legales enmarcadas en la Ley 1581 de 2012 y del Decreto 1377 de 2013)</br>
-</br>
-Puedes solucionar todas tus inquietudes a través del sitio web <a href="http://sau.unad.edu.co/">http://sau.unad.edu.co</a>.</br>
-</br>
-			
-		</td>
-	</tr>
-</table>
-</div>
-
 <aui:fieldset>
 
 <aui:input name="usuario" type="text" label="Usuario: *" inlineLabel="false" required="true" showRequiredLabel="false" ></aui:input>
@@ -189,5 +165,30 @@ Usar el usuario y contraseña del Campus Virtual<p></p>
 <%
 	} 
 %>
+
+</br>
+
+<table width="960px" border="1" bordercolor="black" style="border: 1px solid black !important; border-collapse: inherit !important">
+	<tr style="background-color: rgb(0,158,224); color:white; text-align:center; font-weight: bold" >
+		<td>
+			Estimado Estudiante Unadista
+		</td>
+	</tr>
+	<tr>
+		<td>
+
+
+</br>
+Te invitamos a consultar tu registro académico por medio del sitio <a href="http://www.sivirtual.gov.co">www.sivirtual.gov.co</a>, para acceder a este servicio debes ingresar los datos de acceso al Campus Virtual (Usuario y Contraseña).</br>
+</br>
+Este nuevo servicio surge de la Alianza Estratégica entre la Universidad Nacional Abierta y a Distancia (UNAD) y el Ministerio de las Tecnologías de la Información y Comunicaciones (MINTIC) para brindarte distintas alternativas de acceso a la información; debes tener en cuenta que al ingresar tus datos, estás autorizando a la UNAD y al MINTIC a visualizar tu registro académico. (Disposiciones legales enmarcadas en la Ley 1581 de 2012 y del Decreto 1377 de 2013)</br>
+</br>
+Puedes solucionar todas tus inquietudes a través del sitio web <a href="http://sau.unad.edu.co/">http://sau.unad.edu.co</a>.</br>
+</br>
+			
+		</td>
+	</tr>
+</table>
+
 
 </div>
